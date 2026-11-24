@@ -1037,7 +1037,17 @@ h2 {
   .navigation.open { opacity: 1; visibility: visible; transform: none; }
   .navigation a { font-size: 15px; }
 
-  .intro { padding: 58px 6%; gap: 6%; }
+  .intro { grid-template-columns: 1fr; padding: 50px 6% 60px; gap: 40px; }
+  .intro-copy { text-align: center; }
+  .intro .kicker { text-align: center; }
+  .intro h1 { text-align: center; }
+  .intro h1 .line { text-align: center; }
+  .intro h1 .line > span { text-align: center; }
+  .intro-text { text-align: center; margin-left: auto; margin-right: auto; }
+  .intro-actions { justify-content: center; }
+  .hero-stats { justify-content: center; }
+  .intro-visual { justify-self: center; margin: 0 auto; }
+  .intro-visual > p { text-align: center; }
   .visual-frame { height: 350px; }
   .steps-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
   .reviews-grid { grid-template-columns: 1fr; }
@@ -1057,9 +1067,20 @@ h2 {
   .identity-name small { font-size: 8px; }
   
   .intro { grid-template-columns: 1fr; padding: 36px 6% 54px; gap: 40px; }
-  .intro h1 { font-size: clamp(38px, 12vw, 52px); }
-  .intro-actions { flex-direction: column; width: 100%; }
+  .intro-copy { text-align: center; }
+  .intro .kicker { text-align: center; }
+  .intro h1 {
+    font-size: clamp(38px, 12vw, 52px);
+    text-align: center;
+  }
+  .intro h1 .line { text-align: center; }
+  .intro h1 .line > span { text-align: center; }
+  .intro-text { text-align: center; margin-left: auto; margin-right: auto; }
+  .intro-actions { flex-direction: column; width: 100%; justify-content: center; }
   .primary-link, .secondary-link { width: 100%; justify-content: center; }
+  .hero-stats { justify-content: center; }
+  .intro-visual { max-width: none; margin: 0 auto; width: 100%; }
+  .intro-visual > p { text-align: center; }
   .visual-frame { height: 320px; }
   .blob { right: -12px; bottom: -12px; }
   .sticker { left: -8px; top: -14px; width: 80px; height: 80px; font-size: 10.5px; }
